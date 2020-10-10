@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700|Bebas+Neue:400,700");
+
+body {
+    background-color: #1c313a;
+}
+
+#main {
+ 
+ background-color:  #4bacb8;
+ -moz-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  width: 100%;
+ margin: 0em;
+ padding: 0em;
+  width: 100vw;
+}
+#header {
+    padding: 1em 2em 1em 2em;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    background-color: #455a64;
+    color: white;
+    font-family: "Roboto Slab", serif; 
+    font-size: 1em;
+   
+
+}
+
+
+@media screen and (min-width: 1200 px){
+    #header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px 10px 80px;
+        max-height: 60px;
+    }
+    #header i {
+        padding: 10px 10px 10px 10px;
+        max-height: 10px;
+    }
+}
+#main section {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 0em 0em 0em;
+    font-size: 1.5em;
+    color: #1c313a;
+    font-family: "Roboto Slab", serif;
+
+}
+#main section> .banner {
+
+    background-color:#4bacb8 ;
+    font-size: 2 em;
+    font-family: "Open Sans", serif; 
+    color: #fffde7;
+     width: 100%;
+
+}
+ .banner img { 
+    width:300px;
+    height:250px;
+    padding: 0em;
+}
+.banner p{
+    font-size: 30px; 
+    color: #121618;
+    
+}
+
+.content img{
+    padding:0em 2em 0em 0em;
+    width: 95%;
+    height: 70vh;
+   
+ }
+ ul.actions {
+    list-style: none;
+    padding-left: 0;
+}
+
+    ul.actions li {
+        display: inline-block;
+        padding-left: 0;
+        margin: 0 0 0 0.5em;
+    }
+  ul.actions li a{
+   
+    text-decoration: none;
+  }
+
+  
+    .button {
+		-moz-transition: background-color .25s ease-in-out;
+		-webkit-transition: background-color .25s ease-in-out;
+		-ms-transition: background-color .25s ease-in-out;
+		transition: background-color .25s ease-in-out;
+		-webkit-appearance: none;
+		display: inline-block;
+		background-color: #b0003a;
+		color: #ffffff;
+		border: 0;
+		cursor: pointer;
+		outline: 0;
+		padding: 0.5em 0.5em 0.5em 0.5em;
+	}
+ @media screen and (min-width: 750px){
+    #main section>.banner {
+        font-size: 30px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 40vh;
+    }
+ }
+@media screen and (min-width: 1200px){
+    #main section {
+     
+     
+    }
+    
+    #main section>.banner {
+        font-size: 40px;
+        display: flex;
+       flex-direction: row;
+        width: 100%;
+        height: 80vh;
+    }
+    .banner img{
+        width:60%;
+        height: 80vh;
+    }
+    .banner p{
+        align-self: center;
+        font-size: 0.5em;   
+    }
+  
+        }
+
+#writing {
+    background-color: #e3f2fd;
+   
+}
+#writing> .content {
+    display: flex;
+    flex-direction: column;
+ 
+}
+#writing> .content> article {
+    padding: 0.5em 1em 1em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 75vw;
+   
+    border-radius: 10px ;
+    box-shadow: 5px 5px 5px 5px #bdbdbd;
+    border-collapse: separate;
+    border-spacing: 1em;
+    font-size: 0.8em;
+}
+#writing> .content> article> i {
+ align-self: center;
+ padding-right: 1em;
+ width: 20px;
+ height: 30px;
+}
+#photo {
+    background-color:#ffffff;
+  
+}
+#photo> .content > div{
+    font-size: 1em;
+}
+
+#web {
+    background-color:#1c313a;
+}
+#web> header {
+    color: #80deea;
+}
+#web> .widgets> article{
+    padding: 0.5em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 70vw;
+    border-radius: 10px ;
+   
+    border-collapse: separate;
+    border-spacing: 1em;
+    font-size: 0.8em;
+
+}
+#web> .widgets> article> span {
+    display: block;
+    position: relative;
+}
+@media screen and (min-width: 1200px){
+    #writing> .content {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 40vh;
+    }
+    #writing> .content> article {
+        flex-direction: column;
+        justify-content: center;
+        width: 20vw; 
+        height: 30vh;  
+    } 
+    #photo> .content > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      
+    }
+    #photo> .content> div> img{
+        width: 40vw;
+        height: 40 vh;
+    }
+    #photo> .content> div> p{
+      align-self: center;
+      font-size: 1.2em;
+      padding: 0em 4em 0em 0em ;
+    }
+    .content img:nth-child(2){
+        width: 30vw;
+        height: 100 vh;
+    }
+}
+#contact{
+    background-color: #ffffff;
+    height: 80vh;
+}
+
+.icon {
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+}
+
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        text-transform: none !important;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400;
+    }
+
+    .icon.solid:before {
+        font-weight: 900;
+    }
+
+    .icon.brands:before {
+        font-family: 'Font Awesome 5 Brands';
+    }
+
+    .icon:before {
+        line-height: inherit;
+    }
+
+    .icon > .label {
+        display: none;
+    }
+
+/* Nav */
+
+#nav {
+    text-align: center;
+    height: 4.25em;
+    cursor: default;
+}
+
+    #nav a {
+        position: relative;
+        display: inline-block;
+        color: #000000;
+        width: 1em;
+        height: 1em;
+        line-height: 0.9em;
+        font-size: 2.5em;
+        margin: 0 0.25em 0 0.25em;
+        opacity: 0.35;
+        outline: 0;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+        -ms-transition: opacity .25s ease-in-out;
+        transition: opacity .25s ease-in-out;
+    }
+
+        #nav a.icon:before {
+            padding-right: 0;
+        }
+
+        #nav a:before {
+            font-size: 0.8em;
+        }
+
+        #nav a:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: -0.75em;
+            margin-left: -0.5em;
+            border-bottom: solid 0em #000000;
+            border-left: solid 0.5em transparent;
+            border-right: solid 0.5em transparent;
+            -moz-transition: border-bottom-width .25s ease-in-out;
+            -webkit-transition: border-bottom-width .25s ease-in-out;
+            -ms-transition: border-bottom-width .25s ease-in-out;
+            transition: border-bottom-width .25s ease-in-out;
+        }
+
+        #nav a span {
+            display: block;
+            position: absolute;
+            background:#222222;
+            color:  #ffffff;
+            top: -2.75em;
+            font-size: 0.3em;
+            height: 2.25em;
+            line-height: 2.25em;
+            left: 50%;
+            opacity: 0;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+            -ms-transition: opacity .25s ease-in-out;
+            transition: opacity .25s ease-in-out;
+            width: 5.5em;
+            margin-left: -2.75em;
+        }
+
+            #nav a span:after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -0.4em;
+                left: 50%;
+                margin-left: -0.6em;
+                border-top: solid 0.6em #222222;
+                border-left: solid 0.6em transparent;
+                border-right: solid 0.6em transparent;
+            }
+
+        #nav a:hover {
+            opacity: 1.0;
+        }
+
+            #nav a:hover span {
+                opacity: 1.0;
+            }
+
+        #nav a.active {
+            opacity: 1.0;
+        }
+
+            #nav a.active:after {
+                border-bottom-width: 0.5em;
+            }
+
+
+
+    @media screen and (min-width: 980px) {
+        #contact{
+            background-color: #ffffff;
+            height: 50vh;
+        }
+    }
+
